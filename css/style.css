@@ -465,6 +465,15 @@ button:focus,
     margin-bottom : 40px;
     }
 
+/* Article thumbnail: responsive and capped width */
+.section-articles .content-item img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
 .content-item h3 {
     margin         : 0 0 10px;
     line-height    : 1;
