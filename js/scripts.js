@@ -1,14 +1,14 @@
-jQuery(function ($) {
+const year = document.getElementById('year');
+if (year) year.textContent = new Date().getFullYear();
 
-    'use strict';
+const revealItems = document.querySelectorAll('.reveal');
+const reveal = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      reveal.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
 
-    // --------------------------------------------------------------------
-    // PreLoader
-    // --------------------------------------------------------------------
-
-    (function () {
-        $('#preloader').delay(200).fadeOut('slow');
-    }());
-
-
-}); // JQuery end
+revealItems.forEach((item) => reveal.observe(item));
