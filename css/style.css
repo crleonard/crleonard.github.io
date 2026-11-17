@@ -197,3 +197,8 @@ body { background:radial-gradient(ellipse at 15% 0%,#e4eaf9,transparent 55%),#ed
 /* Consistent technology badges across the portfolio. */
 .tag-row { gap:6px; }
 .tag-row span { display:inline-flex; align-items:center; padding:4px 8px; border-radius:5px; background:#e8eef9; color:#5f7398; font-size:9px; font-weight:500; }
+
+@media(max-width:740px) {
+  .oss-card { grid-template-columns:minmax(0,1fr); }
+  .oss-card > a { grid-column:1; grid-row:auto; justify-self:start; margin-top:4px; }
+}
