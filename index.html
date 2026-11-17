@@ -10,13 +10,9 @@
   <meta property="og:description" content="Apps, developer tools, open source and platform engineering." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://crleonard.github.io" />
-  <meta name="theme-color" content="#080b12" />
+  <meta name="theme-color" content="#edf0f5" />
   <link href="favicon.ico" rel="icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css?v=4" />
+  <link rel="stylesheet" href="css/style.css?v=17" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -34,87 +30,45 @@
   </script>
 </head>
 <body>
-  <div class="page-glow page-glow-one" aria-hidden="true"></div>
-  <div class="page-glow page-glow-two" aria-hidden="true"></div>
 
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Chris Leonard home">
-      <span class="brand-mark">CL</span>
-      <span>Chris Leonard</span>
-    </a>
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="#projects">Projects</a>
-      <a href="#opensource">Open Source</a>
-      <a href="#experience">Experience</a>
-      <a href="#about">About</a>
-    </nav>
-  </header>
-
-  <main>
-    <aside class="launch-banner" aria-label="API Sketchbook launch">
-      <div class="launch-banner-copy">
-        <div class="launch-banner-heading"><strong>API Sketchbook</strong><span class="launch-badge">Coming soon</span></div>
-        <p>My latest developer tool is launching soon.</p>
+  <main class="workspace" id="top">
+    <aside class="workspace-sidebar" aria-label="Portfolio sidebar">
+      <div class="sidebar-profile"><img src="img/img-profile.jpeg" alt="" /><strong>Chris Leonard</strong><span>Engineer &amp; founder</span></div>
+      <p class="sidebar-label">Portfolio</p>
+      <nav aria-label="Portfolio sections">
+        <a href="#intro-title"><span aria-hidden="true">◉</span> Overview</a>
+        <a href="#projects"><span aria-hidden="true">▦</span> Projects</a>
+        <a href="#opensource"><span aria-hidden="true">⌘</span> Open source</a>
+        <a href="#experience"><span aria-hidden="true">◷</span> Experience</a>
+        <a href="#about"><span aria-hidden="true">◎</span> About me</a>
+      </nav>
+      <div class="sidebar-bottom"><p>Made for Apple.<br>Built with Swift.</p><a href="mailto:cleonard121@icloud.com">Get in touch ↗</a></div>
+    </aside>
+    <div class="workspace-content">
+    <section class="identity section" aria-labelledby="intro-title">
+      <div class="identity-main">
+        <p class="eyebrow">Chris Leonard / UK</p>
+        <h1 id="intro-title">Engineer.<br>Founder.<br><span>Apple at heart.</span></h1>
+        <div class="identity-caption"><span>Swift &amp; SwiftUI</span><span>iOS &amp; macOS</span><span>Go</span></div>
       </div>
-      <a class="button button-primary" href="https://apisketchbook.app" target="_blank" rel="noreferrer">Explore API Sketchbook <span aria-hidden="true">↗</span></a>
+      <div class="identity-detail">
+        <img src="img/img-profile.jpeg" alt="Chris Leonard" width="220" height="220" />
+        <p>Hello, I’m Chris.</p>
+        <p>I’m a Senior iOS Engineer at Atom bank. Alongside that, I build my own products and open-source tools. Recently, I’ve been getting into Go, too.</p>
+        <a href="mailto:cleonard121@icloud.com">Let’s talk <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <aside class="release-note section" aria-label="API Sketchbook launch">
+      <span class="release-label">Launching Soon</span>
+      <a href="https://apisketchbook.app" target="_blank" rel="noreferrer"><img class="product-icon" src="img/api-sketchbook-icon.png" alt="" width="45" height="45" /><span class="release-copy"><strong>API Sketchbook</strong><span>My latest developer tool is launching soon.</span></span><span class="release-arrow" aria-hidden="true">↗</span></a>
     </aside>
 
-    <section class="hero section">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Software Engineer • Founder • Pilot</p>
-        <h1>Chris Leonard, Senior Software Engineer building apps, developer tools and digital products.</h1>
-        <p class="hero-lede">
-          I’m Chris Leonard, a UK-based Senior iOS Engineer focused on clean architecture,
-          Swift, SwiftUI, platform tooling and products that solve real problems.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">View projects</a>
-          <a class="button button-ghost" href="https://github.com/crleonard" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
-        <div class="hero-stats" aria-label="Highlights">
-          <div><strong>9+</strong><span>years iOS</span></div>
-          <div><strong>Swift</strong><span>Apple platforms</span></div>
-          <div><strong>Open</strong><span>source tools</span></div>
-        </div>
-      </div>
-
-      <aside class="hero-card reveal" aria-label="Current focus">
-        <div class="profile-ring">
-          <img src="img/img-profile.jpeg" alt="Chris Leonard" />
-        </div>
-        <div class="card-label">Current Journey</div>
-        <ul class="focus-list">
-          <li><span>🚀</span> <a href="https://apisketchbook.app" target="_blank" rel="noreferrer">Building API Sketchbook</a></li>
-          <li><span>🩺</span> Recently launched Glucostats</li>
-          <li><span>🧰</span> Releasing Swift developer tools</li>
-          <li><span>🤿</span> Progressing through PADI scuba certifications</li>
-        </ul>
-      </aside>
-    </section>
-
-    <section class="section intro-grid" aria-label="Engineering values">
-      <article class="value-card reveal">
-        <span class="icon">01</span>
-        <h2>Product-minded engineering</h2>
-        <p>I like building complete products, not just code. Clear UX, strong architecture, reliable delivery and maintainable foundations.</p>
-      </article>
-      <article class="value-card reveal">
-        <span class="icon">02</span>
-        <h2>Apple platform depth</h2>
-        <p>Native iOS, SwiftUI, UIKit, SPM, CI/CD and modular codebases — with experience in regulated production environments.</p>
-      </article>
-      <article class="value-card reveal">
-        <span class="icon">03</span>
-        <h2>Open source momentum</h2>
-        <p>Developer tools, packages and experiments that turn repeated engineering problems into reusable systems.</p>
-      </article>
-    </section>
-
-    <section class="section" id="projects">
+    <section class="section work-section" id="projects">
       <div class="section-heading reveal">
         <p class="eyebrow">Featured work</p>
-        <h2>Projects that show how I think and build.</h2>
-        <p>Focused case studies and products across Swift, Go, health analytics, developer tooling and platform automation.</p>
+        <h2>My projects</h2>
+        <p>Apps and tools I build alongside my day job.</p>
       </div>
 
       <div class="project-grid">
@@ -123,7 +77,7 @@
           <h3>Glucostats</h3>
           <p>A diabetes data analytics platform for generating meaningful reports from CGM data, with a focus on clarity, privacy and useful insights.</p>
           <div class="tag-row"><span>Go</span><span>CGM data</span><span>PDF reports</span><span>Railway</span></div>
-          <a href="https://glucostats.app" target="_blank" rel="noreferrer">View project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="https://glucostats.app" target="_blank" rel="noreferrer">View project <span aria-hidden="true">↗</span></a>
         </article>
 
         <article class="project-card project-large reveal">
@@ -131,7 +85,7 @@
           <h3>UIAtlas</h3>
           <p>A static visual index for SwiftUI and UIKit previews, turning preview captures and snapshot references into a searchable gallery for documentation, reviews and CI.</p>
           <div class="tag-row"><span>Swift</span><span>SwiftUI</span><span>Snapshot testing</span><span>CI</span></div>
-          <a href="https://github.com/crleonard/UIAtlas" target="_blank" rel="noreferrer">GitHub <i class="fa-brands fa-github"></i></a>
+          <a href="https://github.com/crleonard/UIAtlas" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
         </article>
 
       </div>
@@ -140,27 +94,27 @@
     <section class="section" id="opensource">
       <div class="section-heading reveal">
         <p class="eyebrow">Open source</p>
-        <h2>Small tools, packages and experiments.</h2>
-        <p>Reusable work that reflects my interest in platform quality, automation and developer experience.</p>
+        <h2>Open source</h2>
+        <p>A few open-source tools. Take a look, try them out, or contribute.</p>
       </div>
       <div class="oss-grid">
         <article class="oss-card reveal">
           <strong>Swift Package Audit</strong>
           <span>A command-line tool for auditing Swift Package Manager dependencies and surfacing useful project health checks.</span>
           <div class="tag-row"><span>Swift</span><span>SPM</span><span>CLI</span></div>
-          <a href="https://github.com/crleonard/swift-package-audit" target="_blank" rel="noreferrer">GitHub <i class="fa-brands fa-github"></i></a>
+          <a href="https://github.com/crleonard/swift-package-audit" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
         </article>
         <article class="oss-card reveal">
           <strong>PingTower</strong>
           <span>A simple uptime monitor with a clean web UI and JSON-backed storage for tracking services and experiments.</span>
           <div class="tag-row"><span>Go</span><span>Web</span><span>Monitoring</span></div>
-          <a href="https://github.com/crleonard/pingtower" target="_blank" rel="noreferrer">GitHub <i class="fa-brands fa-github"></i></a>
+          <a href="https://github.com/crleonard/pingtower" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
         </article>
         <article class="oss-card reveal">
           <strong>slogkit</strong>
           <span>Structured logging helpers for Go services and tools.</span>
           <div class="tag-row"><span>Go</span><span>Logging</span><span>Tooling</span></div>
-          <a href="https://github.com/crleonard" target="_blank" rel="noreferrer">GitHub <i class="fa-brands fa-github"></i></a>
+          <a href="https://github.com/crleonard" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
         </article>
       </div>
     </section>
@@ -168,7 +122,7 @@
 <section class="section timeline-section" id="experience">
   <div class="section-heading reveal">
     <p class="eyebrow">Career</p>
-    <h2>Building software professionally since 2017.</h2>
+    <h2>Experience</h2>
     <p>
       My experience spans commercial software development,
       fintech and independent product development, with a
@@ -322,12 +276,12 @@
     <section class="section about-section" id="about">
       <div class="about-copy reveal">
         <p class="eyebrow">About</p>
-        <h2>Software, systems and disciplined learning.</h2>
+        <h2>Beyond the screen</h2>
         <p>
           I’m a Senior iOS Engineer based in the UK. I care about clean software, practical design, strong foundations and building products that are useful beyond a demo.
         </p>
         <p>
-          Outside of code, aviation and scuba diving shape how I think about systems: preparation, checklists, reliability, calm decision-making and continual learning.
+          I’m also a pilot, a scuba diver and a motorcyclist. There’s usually something new to learn, in the air or under the water.
         </p>
       </div>
       <div class="interest-grid reveal">
@@ -340,14 +294,15 @@
     <section class="section contact-section" id="contact">
       <div class="contact-card reveal">
         <p class="eyebrow">Contact</p>
-        <h2>Interested in working together?</h2>
-        <p>Whether you have a project in mind, an interesting opportunity or just want to connect, feel free to get in touch.</p>
+        <h2>Have something in mind?</h2>
+        <p>Have a question about a project, or something you’d like to work on together? I’d like to hear from you.</p>
         <div class="contact-actions">
-          <a class="button button-primary" href="mailto:cleonard121@icloud.com">Email me</a>
+          <a class="button button-primary" href="mailto:cleonard121@icloud.com">cleonard121@icloud.com ↗</a>
           <a class="button button-secondary" href="https://www.linkedin.com/in/crleonard23/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </div>
     </section>
+    </div>
   </main>
 
   <footer class="site-footer">
