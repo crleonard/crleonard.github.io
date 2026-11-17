@@ -193,3 +193,7 @@ body { background:radial-gradient(ellipse at 15% 0%,#e4eaf9,transparent 55%),#ed
 
 .identity-detail img { width:220px; height:220px; margin-bottom:24px; }
 @media(max-width:740px) { .identity-detail img { float:none; width:180px; height:180px; margin:0 0 22px; } }
+
+/* Consistent technology badges across the portfolio. */
+.tag-row { gap:6px; }
+.tag-row span { display:inline-flex; align-items:center; padding:4px 8px; border-radius:5px; background:#e8eef9; color:#5f7398; font-size:9px; font-weight:500; }
